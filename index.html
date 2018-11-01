@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/design.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">s
+    <title>Stranica</title>
+    <style>
+        .container1 {
+            color: white;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-rows: repeat(2,461px);
+            grid-template-columns: repeat(2,50%);
+            grid-template-areas: 
+               "prvi drugi"
+                "treci cetvrti";
+                
+        }
+        
+        .prvi {
+            grid-area: prvi;
+            background-color: #565554;
+        }
+        
+        h1 {
+            margin-top: 25%;
+           font-family: 'Raleway', sans-serif;
+            
+        }
+                h2 {
+            margin-top: 25%;
+             font-size: 35px;
+             font-family: 'Raleway', sans-serif;
+        }
+        
+                h3 {
+            margin-top: 25%;
+                     font-size: 35px;
+                    font-family: 'Raleway', sans-serif;
+        }
+        h4 {
+            margin-top: 25%;
+            font-size: 35px;
+            font-family: 'Raleway', sans-serif;
+        }
+        
+        
+        
+        .drugi {
+            grid-area: drugi;
+            background-color: #0C0910;
+        }
+        
+        .treci {
+            grid-area: treci;
+            background-color: #C0C5C1;
+        }
+        
+        .cetvrti {
+            grid-area: cetvrti;
+            background-color: #7D8491;
+        }
+        
+        @media only screen and (max-width: 1000px) {
+    .container1 {
+        grid-area: 
+            "prvi"
+            "drugi"
+            "treci"
+            "cetvrti";
+        grid-template-rows: auto;
+           grid-template-columns: 1fr;
+        
+    }
+}
+        
+      
+    </style>
+    <body>
+        <div class="container1">
+        <div class="prvi">
+            <h1>TOMISLAV</h1>
+            </div>
+            <div class="drugi">
+            <h2>IVANA</h2>
+            </div>
+            <div class="treci">
+            <h3>VID</h3>
+            </div>
+            <div class="cetvrti">
+            <h4>TIN</h4>
+            </div>
+            
+        </div>
+    </body>
